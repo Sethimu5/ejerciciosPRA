@@ -1,0 +1,58 @@
+\hypertarget{MYsdlexample_8cpp_source}{\section{M\-Ysdlexample.\-cpp}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{keyword}{extern} \textcolor{stringliteral}{"C"} \{
+00002 \textcolor{preprocessor}{#include <SDL.h>}
+00003 \}
+00004 
+\hypertarget{MYsdlexample_8cpp_source_l00005}{}\hyperlink{MYsdlexample_8cpp_abf9e6b7e6f15df4b525a2e7705ba3089}{00005} \textcolor{keywordtype}{int} \hyperlink{MYexample_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} \textcolor{keyword}{const} *argv[])
+00006 \{
+00007 
+00008   \textcolor{comment}{/* initialize SDL */}
+00009   SDL::SDL\_Init(SDL\_INIT\_VIDEO);
+00010 
+00011   \textcolor{comment}{/* set the title bar */}
+00012   SDL::SDL\_WM\_SetCaption(\textcolor{stringliteral}{"SDL Test"}, \textcolor{stringliteral}{"SDL Test"});
+00013 
+00014   \textcolor{comment}{/* create window */}
+00015   SDL\_Surface* screen = SDL::SDL\_SetVideoMode(640, 480, 0, 0);
+00016 
+00017   SDL\_Event event;
+00018   \textcolor{keywordtype}{int} gameover = 0;
+00019 
+00020   \textcolor{comment}{/* message pump */}
+00021   \textcolor{keywordflow}{while} (!gameover)
+00022   \{
+00023     \textcolor{comment}{/* look for an event */}
+00024     \textcolor{keywordflow}{if} (SDL::SDL\_PollEvent(&event)) \{
+00025       \textcolor{comment}{/* an event was found */}
+00026       \textcolor{keywordflow}{switch} (event.type) \{
+00027         \textcolor{comment}{/* close button clicked */}
+00028       \textcolor{keywordflow}{case} SDL::SDL\_QUIT:
+00029           gameover = 1;
+00030           \textcolor{keywordflow}{break};
+00031 
+00032         \textcolor{comment}{/* handle the keyboard */}
+00033         \textcolor{keywordflow}{case} SDL\_KEYDOWN:
+00034           \textcolor{keywordflow}{switch} (event.key.keysym.sym) \{
+00035             \textcolor{keywordflow}{case} SDLK\_ESCAPE:
+00036             \textcolor{keywordflow}{case} SDLK\_q:
+00037               gameover = 1;
+00038               \textcolor{keywordflow}{break};
+00039           \}
+00040           \textcolor{keywordflow}{break};
+00041       \}
+00042     \}
+00043 
+00044     \textcolor{comment}{/* update the screen */}
+00045     SDL::SDL\_UpdateRect(screen, 0, 0, 0, 0);
+00046   \}
+00047 
+00048   \textcolor{comment}{/* cleanup SDL */}
+00049   SDL::SDL\_Quit();
+00050 
+00051   \textcolor{keywordflow}{return} 0;
+00052 \}
+00053 
+\end{DoxyCode}

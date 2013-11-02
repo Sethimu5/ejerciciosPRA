@@ -10,5 +10,6 @@ include_directories(${SDL_INCLUDE_DIR})
 
 add_executable(MYexample MYexample.cpp)
 add_executable(MYsdlexample MYsdlexample.cpp)
+#add_executable(DoxyFile Doxyfile)
 
 target_link_libraries(MYsdlexample ${SDL_LIBRARY})
