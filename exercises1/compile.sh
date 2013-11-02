@@ -4,8 +4,8 @@
 #gcc example.cpp -O2 -o example -lstdc++
 #gcc example.cpp -g -o example -lstdc++
 
-g++ -lm example.cpp -o example
+g++ -lm MYexample.cpp -o MYexample
 
 
 #gcc sdlexample.cpp `pkg-config --cflags --libs sdl` -o sdlexample -lstdc++
-g++ sdlexample.cpp `pkg-config --cflags --libs sdl` -o sdlexample
+g++ MYsdlexample.cpp `pkg-config --cflags --libs sdl` -o MYsdlexample

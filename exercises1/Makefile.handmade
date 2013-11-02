@@ -1,4 +1,4 @@
-#OPTIONS=-std=c++11 -g -O2 -lstdc++ -lm
+OPTIONS=-std=c++11 -g -O2 -lstdc++ -lm
 
 
 # compile all .cpp files
@@ -12,18 +12,18 @@
 #%: %.cpp
 	#g++ $(OPTIONS) $< -o $@
 
-all: example sdlexample
+all: MYexample MYsdlexample
 
-example: example.cpp
+MYexample: MYexample.cpp
 	g++ -lm $< -o $@
 
-sdlexample: sdlexample.cpp
+MYsdlexample: MYsdlexample.cpp
 	g++ $< `pkg-config --cflags --libs sdl` -o $@
 	
 clean: 
 	#rm -f $(OBJS)
-	rm -f example
-	rm -f sdlexample
+	rm -f MYexample
+	rm -f MYsdlexample
 	rm -f tags
 
 # phony targets do not refer to a file but a command

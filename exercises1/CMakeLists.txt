@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 2.6)
 
-project (lecture1)
+project (exercises1)
 
 Find_Package ( SDL REQUIRED )
 
@@ -8,7 +8,7 @@ Find_Package ( SDL REQUIRED )
 
 include_directories(${SDL_INCLUDE_DIR})
 
-add_executable(example example.cpp)
-add_executable(sdlexample sdlexample.cpp)
+add_executable(MYexample MYexample.cpp)
+add_executable(MYsdlexample MYsdlexample.cpp)
 
-target_link_libraries(sdlexample ${SDL_LIBRARY})
+target_link_libraries(MYsdlexample ${SDL_LIBRARY})

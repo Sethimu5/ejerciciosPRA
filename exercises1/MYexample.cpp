@@ -21,12 +21,12 @@ void test() {
  */
 int main() {
 
-  std::cout << "hi, advanced programmers!" << std::endl;
+  std::cout << "hi, I'm a newbee with this stuff!" << std::endl;
 
     double degrees = 125;
     double radians = degrees * 180 / PI;
 
-    std::cout << cos(radians) << std::endl;
+    std::cout << "Cos of " << degrees << " is " <<cos(radians) << std::endl;
     return 0;
 }
 
