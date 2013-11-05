@@ -25,7 +25,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler.
-CMAKE_CXX_COMPILER:FILEPATH=CMAKE_CXX_COMPILER-NOTFOUND
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //Flags used by the compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -170,20 +170,33 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for SDL2
+// Test.
+SDL2 Test_DIR:PATH=SDL2 Test_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for SDL2.
+SDL2_DIR:PATH=SDL2_DIR-NOTFOUND
+
 //Path to a library.
-SDLMAIN_LIBRARY:FILEPATH=SDLMAIN_LIBRARY-NOTFOUND
+SDLMAIN_LIBRARY:FILEPATH=/usr/lib64/libSDLmain.a
 
 //Path to a file.
-SDL_INCLUDE_DIR:PATH=SDL_INCLUDE_DIR-NOTFOUND
+SDL_INCLUDE_DIR:PATH=/usr/include/SDL
 
-//Path to a library.
-SDL_LIBRARY_TEMP:FILEPATH=SDL_LIBRARY_TEMP-NOTFOUND
+//Where the SDL Library can be found
+SDL_LIBRARY:STRING=/usr/lib64/libSDLmain.a;/usr/lib64/libSDL.so;-lpthread
 
 //Value Computed by CMake
 exercises1_BINARY_DIR:STATIC=/home/mucgs/Descargas/ejerciciosPRA/exercises1
 
 //Value Computed by CMake
 exercises1_SOURCE_DIR:STATIC=/home/mucgs/Descargas/ejerciciosPRA/exercises1
+
+//The directory containing a CMake configuration file for libSDL2.
+libSDL2_DIR:PATH=libSDL2_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for libSDL.
+libSDL_DIR:PATH=libSDL_DIR-NOTFOUND
 
 
 ########################
@@ -327,6 +340,9 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding SDL
+FIND_PACKAGE_MESSAGE_DETAILS_SDL:INTERNAL=[/usr/lib64/libSDLmain.a;/usr/lib64/libSDL.so;-lpthread][/usr/include/SDL][v1.2.15()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+SDL_LIBRARY_TEMP:INTERNAL=/usr/lib64/libSDLmain.a;/usr/lib64/libSDL.so;-lpthread
 

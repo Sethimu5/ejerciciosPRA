@@ -6,13 +6,13 @@ int main(int argc, char const *argv[])
 {
 
   /* initialize SDL */
-  SDL::SDL_Init(SDL_INIT_VIDEO);
+  SDL_Init(SDL_INIT_VIDEO);
 
   /* set the title bar */
-  SDL::SDL_WM_SetCaption("SDL Test", "SDL Test");
+  SDL_WM_SetCaption("SDL Test", "SDL Test");
 
   /* create window */
-  SDL_Surface* screen = SDL::SDL_SetVideoMode(640, 480, 0, 0);
+  SDL_Surface* screen = SDL_SetVideoMode(640, 480, 0, 0);
 
   SDL_Event event;
   int gameover = 0;
@@ -21,11 +21,11 @@ int main(int argc, char const *argv[])
   while (!gameover)
   {
     /* look for an event */
-    if (SDL::SDL_PollEvent(&event)) {
+    if (SDL_PollEvent(&event)) {
       /* an event was found */
       switch (event.type) {
         /* close button clicked */
-      case SDL::SDL_QUIT:
+      case SDL_QUIT:
           gameover = 1;
           break;
 
@@ -42,11 +42,11 @@ int main(int argc, char const *argv[])
     }
 
     /* update the screen */
-    SDL::SDL_UpdateRect(screen, 0, 0, 0, 0);
+    SDL_UpdateRect(screen, 0, 0, 0, 0);
   }
 
   /* cleanup SDL */
-  SDL::SDL_Quit();
+  SDL_Quit();
 
   return 0;
 }

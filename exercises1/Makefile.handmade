@@ -10,15 +10,15 @@
 #all: $(OBJS)
 
 #%: %.cpp
-	#gcc $(OPTIONS) $< -o $@
+	#g++ $(OPTIONS) $< -o $@
 
 all: MYexample MYsdlexample
 
 MYexample: MYexample.cpp
-	gcc -lm $< -o $@
+	g++ -lm $< -o $@
 
 MYsdlexample: MYsdlexample.cpp
-	gcc $< `pkg-config --cflags --libs sdl` -o $@
+	g++ $< `sdl-config --cflags sdl-config --libs` -o $@
 	
 clean: 
 	#rm -f $(OBJS)
