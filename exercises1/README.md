@@ -1,8 +1,8 @@
 # Lecture 1 - Exercises
 TENGO UN PROBLEMA CON MI INSTALACION DE CASA, NO ENCUENTRA 'g++' Y NO SE QUE PAQUETE ME FALTA POR ACTUALIZAR/INSTALAR
 - upload a project to github [Done]
-- must include a makefile
-- must include a cmake file
+- must include a makefile [Done]
+- must include a cmake file [Done]
 - must be automatically indented
 - must be well documented
 - cmake + make must build everything including documentation (name Makefile so that it doesn't 
