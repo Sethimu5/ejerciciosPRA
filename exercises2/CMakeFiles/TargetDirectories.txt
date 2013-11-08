@@ -1,0 +1,4 @@
+/root/ejerciciosPRA/exercises2/CMakeFiles/big_o.dir
+/root/ejerciciosPRA/exercises2/CMakeFiles/big_o_example.dir
+/root/ejerciciosPRA/exercises2/CMakeFiles/iterators.dir
+/root/ejerciciosPRA/exercises2/CMakeFiles/ranged_for.dir
