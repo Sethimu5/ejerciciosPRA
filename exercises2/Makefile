@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/advancedprogramming/lectures/lecture2
+CMAKE_SOURCE_DIR = /root/ejerciciosPRA/exercises2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/advancedprogramming/lectures/lecture2
+CMAKE_BINARY_DIR = /root/ejerciciosPRA/exercises2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/advancedprogramming/lectures/lecture2/CMakeFiles /root/advancedprogramming/lectures/lecture2/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ejerciciosPRA/exercises2/CMakeFiles /root/ejerciciosPRA/exercises2/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/advancedprogramming/lectures/lecture2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/ejerciciosPRA/exercises2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

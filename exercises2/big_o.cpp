@@ -8,7 +8,7 @@
 
 #include <sstream>
 
-#include <time.h>
+#include <ctime>
 
 // borrowed from http://anandpandia.blogspot.com.es/2012/08/quicksort-algorithm-and-example-in-c.html
 // (ask for permission!)
@@ -67,8 +67,8 @@ void bubbleSort(vector < int >&list)
 
 int main(int argc, char const *argv[])
 {
-	clock_t timei = clock();
-	clock_t timef;
+	std::time_t timei = std::time(system_clock);
+	std::time_t timef;
 	
     if (argc < 3) {
         cout <<
@@ -112,7 +112,7 @@ int main(int argc, char const *argv[])
             //cout << i << endl;
         }
 
-	timef = clock();
+	timef = std::time(system_clock);
 	double secs = (timef - timei) * CLOCKS_PER_SEC;
 
 	cout << timei << endl;
