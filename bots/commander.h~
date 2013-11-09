@@ -1,0 +1,19 @@
+#ifndef _COMMANDER_H_INCLUDED_
+#define _COMMANDER_H_INCLUDED_
+
+#include <vector>
+#include "bots.h"
+#include "bot.h"
+
+class commander
+{
+ public:
+
+  typedef std::pair<int,int> position;
+  
+  auto calculate_move(bot::bot & the_bot, glColor3f color) const {
+    return direction;
+  }    
+}
+
+#endif

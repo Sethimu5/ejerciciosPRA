@@ -10,7 +10,7 @@ add_definitions(-std=c++11)
 
 include_directories(${SDL_INCLUDE_DIR})
 
-add_executable(bots playground.cpp bot.cpp bots.cpp commander.cpp)
+add_executable(bots playground.cpp bot.cpp bots.cpp comander.cpp)
 
 target_link_libraries(bots ${SDL_LIBRARY})
 target_link_libraries(bots ${OPENGL_LIBRARY})

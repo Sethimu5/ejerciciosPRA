@@ -1,0 +1,2 @@
+/home/mucgs/Descargas/ejerciciosPRA/exercises1/CMakeFiles/MYexample.dir
+/home/mucgs/Descargas/ejerciciosPRA/exercises1/CMakeFiles/MYsdlexample.dir

@@ -13,12 +13,8 @@ void bots::generate(size_t number_teams,
     std::random_device rd;
     std::mt19937 gen(rd());
     std::mt19937 gen2(rd());
-    std::uniform_int_distribution < bot::field_size > random_width(0,
-            _width -
-            1);
-    std::uniform_int_distribution < bot::field_size > random_height(0,
-            _height
-            - 1);
+    std::uniform_int_distribution < bot::field_size > random_width(0, _width - 1);
+    std::uniform_int_distribution < bot::field_size > random_height(0, _height - 1);
 
     if (number_teams * bots_per_team > _width * _height) {
         throw new too_many_bots;
@@ -47,7 +43,7 @@ bots::~bots()
 }
 
 
-const bot *bots::find_at(const bot::position & pos) const const
+const bot *bots::find_at(const bot::position & pos) const 
 {
     auto it = std::find_if(_bots.begin(), _bots.end(),
             [&pos] (const bot & bot) {
@@ -62,13 +58,13 @@ const bot *bots::find_at(const bot::position & pos) const const
 
 }
 
-bool bots::empty(const bot::position & pos) const const
+bool bots::empty(const bot::position & pos) const
 {
     return find_at(pos) == nullptr;
 }
 
 // FIXME: try not to copy here!!
-bool bots::can_move(const bot & the_bot, const direction & dir) const const
+bool bots::can_move(const bot & the_bot, const direction & dir) const 
 {
     // I have to _perform_ the movement
     //bot copy_bot(the_bot);
@@ -87,14 +83,9 @@ void bots::perform_action(bot & the_bot)
 
     // TODO check attacks and act!
     if (bot * victim = would_attack(the_bot, dir)) {
-        victim->_energy = std::min(0,
-                victim->_energy - std::min(0,
-                    the_bot.
-                    get_base_attack
-                    () -
-                    victim->
-                    get_base_defense
-                    ()));
+        victim->_energy = std::min(0, 
+                victim->_energy - std::min(0, 
+                    the_bot.get_base_attack () - victim-> get_base_defense ()));
 
     } else if (can_move(the_bot, dir)) {
 
@@ -104,7 +95,7 @@ void bots::perform_action(bot & the_bot)
 }
 
 
-bot *bots::would_attack(const bot & the_bot, const direction & dir) const const
+bot *bots::would_attack(const bot & the_bot, const direction & dir) const 
 {
 
     return nullptr;

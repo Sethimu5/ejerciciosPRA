@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/MYsdlexample.dir/MYsdlexample.cpp.o  -o MYsdlexample -rdynamic -Wl,-Bstatic -lSDLmain -Wl,-Bdynamic -lSDL -lpthread 
