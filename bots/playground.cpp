@@ -86,7 +86,8 @@ int main()
 
     /////////////////////////////////////////
 	bots.for_each_bot([& team_color, &bots] (bot & the_bot) {
-	    auto direct = commander::calculate_move(& the_bot, & team_color);
+	    direction direct;
+	    commander::calculate_move(& the_bot, & team_color, direct);
             bots.move(the_bot,& direct);
     });
     /////////////////////////////////////////

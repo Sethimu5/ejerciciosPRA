@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1504572213/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1504572213.dir/build.make CMakeFiles/cmTryCompileExec1504572213.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1504572213.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1504572213.dir/CheckSymbolExists.c.o   -c /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1504572213
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1504572213.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1504572213.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1504572213 -rdynamic 
+CMakeFiles/cmTryCompileExec1504572213.dir/CheckSymbolExists.c.o: En la función `main':
+CheckSymbolExists.c:(.text+0x16): referencia a `pthread_create' sin definir
+collect2: error: ld devolvió el estado de salida 1
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec1504572213] Error 1
+gmake: *** [cmTryCompileExec1504572213/fast] Error 2
+
+File /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec997373994/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec997373994.dir/build.make CMakeFiles/cmTryCompileExec997373994.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec997373994.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec997373994.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec997373994
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec997373994.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec997373994.dir/CheckFunctionExists.c.o  -o cmTryCompileExec997373994 -rdynamic -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld devolvió el estado de salida 1
+gmake[1]: *** [cmTryCompileExec997373994] Error 1
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+gmake: *** [cmTryCompileExec997373994/fast] Error 2
+
+

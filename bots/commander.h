@@ -9,17 +9,13 @@
 #include "bots.h"
 #include "bot.h"
 
-enum direction { NOTHING, N, NE, E, SE, S, SW, W, NW };
-
 class commander
 {
 public:
 
 typedef std::pair<int,int> position;
 
-direction calculate_move(bot & the_bot, auto color) const {
-return direction;
-}    
+void calculate_move(bot & the_bot, glColor3f color, direction dir){}    
 };
 
 #endif

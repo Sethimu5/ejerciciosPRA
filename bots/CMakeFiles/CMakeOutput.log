@@ -1,0 +1,367 @@
+The system is: Linux - 3.11.7-200.fc19.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/2.8.12/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/2.8.12/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec389333766/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec389333766.dir/build.make CMakeFiles/cmTryCompileExec389333766.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec389333766.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec389333766.dir/testCCompiler.c.o   -c /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec389333766
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec389333766.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec389333766.dir/testCCompiler.c.o  -o cmTryCompileExec389333766 -rdynamic 
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1386941946/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1386941946.dir/build.make CMakeFiles/cmTryCompileExec1386941946.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1386941946.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1386941946.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec1386941946
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1386941946.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec1386941946.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1386941946 -rdynamic  
+Usando especificaciones internas.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/lto-wrapper
+Objetivo: x86_64-redhat-linux
+Configurado con: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --enable-java-awt=gtk --disable-dssi --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-isl=/builddir/build/BUILD/gcc-4.8.2-20131017/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.2-20131017/obj-x86_64-redhat-linux/cloog-install --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
+Modelo de hilos: posix
+gcc versión 4.8.2 20131017 (Red Hat 4.8.2-1) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.2/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.2/:/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1386941946' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.2/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec1386941946 /usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.2/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../.. CMakeFiles/cmTryCompileExec1386941946.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.2/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crtn.o
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec1386941946/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1386941946.dir/build.make CMakeFiles/cmTryCompileExec1386941946.dir/build]
+  ignore line: [gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1386941946.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1386941946.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec1386941946]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1386941946.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec1386941946.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1386941946 -rdynamic  ]
+  ignore line: [Usando especificaciones internas.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/lto-wrapper]
+  ignore line: [Objetivo: x86_64-redhat-linux]
+  ignore line: [Configurado con: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --enable-java-awt=gtk --disable-dssi --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-isl=/builddir/build/BUILD/gcc-4.8.2-20131017/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.2-20131017/obj-x86_64-redhat-linux/cloog-install --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
+  ignore line: [Modelo de hilos: posix]
+  ignore line: [gcc versión 4.8.2 20131017 (Red Hat 4.8.2-1) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.2/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.2/:/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1386941946' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.2/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec1386941946 /usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.2/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../.. CMakeFiles/cmTryCompileExec1386941946.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.2/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/collect2] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1386941946] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.2] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.2]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../..]
+    arg [CMakeFiles/cmTryCompileExec1386941946.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.2] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.2]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/4.8.2;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3752709660/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3752709660.dir/build.make CMakeFiles/cmTryCompileExec3752709660.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3752709660.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3752709660.dir/testCXXCompiler.cxx.o -c /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3752709660
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3752709660.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec3752709660.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3752709660 -rdynamic 
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1389258515/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1389258515.dir/build.make CMakeFiles/cmTryCompileExec1389258515.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1389258515.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1389258515.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec1389258515
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1389258515.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec1389258515.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1389258515 -rdynamic  
+Usando especificaciones internas.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/lto-wrapper
+Objetivo: x86_64-redhat-linux
+Configurado con: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --enable-java-awt=gtk --disable-dssi --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-isl=/builddir/build/BUILD/gcc-4.8.2-20131017/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.2-20131017/obj-x86_64-redhat-linux/cloog-install --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
+Modelo de hilos: posix
+gcc versión 4.8.2 20131017 (Red Hat 4.8.2-1) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.2/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.2/:/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1389258515' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.2/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec1389258515 /usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.2/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../.. CMakeFiles/cmTryCompileExec1389258515.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.2/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crtn.o
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec1389258515/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1389258515.dir/build.make CMakeFiles/cmTryCompileExec1389258515.dir/build]
+  ignore line: [gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1389258515.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1389258515.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec1389258515]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1389258515.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec1389258515.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1389258515 -rdynamic  ]
+  ignore line: [Usando especificaciones internas.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/lto-wrapper]
+  ignore line: [Objetivo: x86_64-redhat-linux]
+  ignore line: [Configurado con: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --enable-java-awt=gtk --disable-dssi --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-1.5.0.0/jre --enable-libgcj-multifile --enable-java-maintainer-mode --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --disable-libjava-multilib --with-isl=/builddir/build/BUILD/gcc-4.8.2-20131017/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.2-20131017/obj-x86_64-redhat-linux/cloog-install --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
+  ignore line: [Modelo de hilos: posix]
+  ignore line: [gcc versión 4.8.2 20131017 (Red Hat 4.8.2-1) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.2/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.2/:/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1389258515' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.2/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec1389258515 /usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.2/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.2 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../.. CMakeFiles/cmTryCompileExec1389258515.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.2/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/collect2] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1389258515] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.2] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.2]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../..]
+    arg [CMakeFiles/cmTryCompileExec1389258515.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.2] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.2]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.2/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/4.8.2;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1998320346/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1998320346.dir/build.make CMakeFiles/cmTryCompileExec1998320346.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1998320346.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1998320346.dir/CheckIncludeFiles.c.o   -c /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTryCompileExec1998320346
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1998320346.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1998320346.dir/CheckIncludeFiles.c.o  -o cmTryCompileExec1998320346 -rdynamic 
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3482227873/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3482227873.dir/build.make CMakeFiles/cmTryCompileExec3482227873.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3482227873.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3482227873.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3482227873
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3482227873.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3482227873.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3482227873 -rdynamic -lpthread 
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+
+
+Determining if the function XOpenDisplay exists in the /usr/lib64/libX11.so;/usr/lib64/libXext.so passed with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2295940885/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2295940885.dir/build.make CMakeFiles/cmTryCompileExec2295940885.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2295940885.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec2295940885.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2295940885
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2295940885.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec2295940885.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2295940885 -rdynamic -lX11 -lXext 
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3166596247/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec3166596247.dir/build.make CMakeFiles/cmTryCompileExec3166596247.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3166596247.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec3166596247.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3166596247
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3166596247.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec3166596247.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3166596247 -rdynamic 
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2859874375/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2859874375.dir/build.make CMakeFiles/cmTryCompileExec2859874375.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2859874375.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec2859874375.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2859874375
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2859874375.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec2859874375.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2859874375 -rdynamic 
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2240155850/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2240155850.dir/build.make CMakeFiles/cmTryCompileExec2240155850.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2240155850.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec2240155850.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2240155850
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2240155850.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec2240155850.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2240155850 -rdynamic 
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1953208148/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1953208148.dir/build.make CMakeFiles/cmTryCompileExec1953208148.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1953208148.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec1953208148.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1953208148
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1953208148.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec1953208148.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1953208148 -rdynamic 
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1637213688/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1637213688.dir/build.make CMakeFiles/cmTryCompileExec1637213688.dir/build
+gmake[1]: se ingresa al directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1637213688.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec1637213688.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1637213688
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1637213688.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec1637213688.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1637213688 -rdynamic -lICE 
+gmake[1]: se sale del directorio `/home/mucgs/Descargas/ejerciciosPRA/bots/CMakeFiles/CMakeTmp'
+
+
