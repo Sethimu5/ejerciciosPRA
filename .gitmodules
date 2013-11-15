@@ -1,0 +1,3 @@
+[submodule "superbots/bots"]
+	path = superbots/bots
+	url = https://github.com/clnznr/bots.git
