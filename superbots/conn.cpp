@@ -49,7 +49,7 @@ void conn::conecta(std::string server,std::string port){
 	SDL_Init(SDL_INIT_VIDEO);
 	atexit(SDL_Quit);
 
-	SDL_WM_SetCaption("bots", "bots");
+	SDL_WM_SetCaption("Superbots", "Superbots");
 
 	SDL_GL_SetAttribute( SDL_GL_RED_SIZE, 5 );
 	SDL_GL_SetAttribute( SDL_GL_GREEN_SIZE, 5 );

@@ -16,7 +16,8 @@ struct node {
         }
 
     void busqueda(unsigned int max_depth){
-    	direccion = bot::direction(2);
+    	const bot *temp_bot = Mundo.find_at(posicion_actual);
+    	direccion = bot::direction(temp_bot->get_team());
     }
 };
 
