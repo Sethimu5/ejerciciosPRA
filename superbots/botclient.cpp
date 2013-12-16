@@ -1,5 +1,5 @@
 #include "botclient.h"
-#include "bot.h"
+#include "bots/bot.h"
 #include <iostream>
 #include <limits>
 
@@ -9,7 +9,7 @@ struct node {
     const bot::position & _position;
     const bots & _bots;
     float _heuristic;
-    direction _best;
+    bot::direction _best;
     int _depth;
 
     /**
@@ -19,7 +19,7 @@ struct node {
      * @param heuristic
      * @param best
      */
-    node(const bot::position& my_pos, const bots & current_bots, int depth = 0, float heuristic = std::numeric_limits<float>::lowest(), direction best = NOTHING) 
+    node(const bot::position& my_pos, const bots & current_bots, int depth = 0, float heuristic = std::numeric_limits<float>::lowest(), bot::direction best = bot::direction(0))
         : _position(my_pos), _bots(current_bots), _heuristic(heuristic), _best(best), _depth(depth) {
         }
 
@@ -28,7 +28,7 @@ struct node {
             // ugliest hack ever. for-looping over an enum
             int new_depth = _depth + 1;
             for(int i = 0; i < 9; i++) {
-                direction new_dir = static_cast<direction>(i);
+                bot::direction new_dir = static_cast<bot::direction>(i);
 
                 const bot & temp_bot = _bots[_position];
                 if(_bots.can_move(temp_bot, new_dir) || _bots.attacks(temp_bot, new_dir)) {
@@ -50,13 +50,19 @@ struct node {
             auto m = _bots.bot_count();
             bot::team_id team = _bots[_position].get_team();
             int res = 0;
+            int tem = 0;
+            int rn = 0;
             for(auto kv : m) {
                 if(team != kv.first) {
-                    res += kv.second;
+                	res += _bots[_position].get_experience() * _bots[_position].get_energy();
+                	rn++;
+                }
+                else{
+                    tem += _bots[_position].get_experience() * _bots[_position].get_energy();
                 }
 
             }
-            _heuristic = (m[team] * 0.5) - (res * 0.3);
+            _heuristic = (m[team] * tem) - (rn*res);
         }
     }
 };
