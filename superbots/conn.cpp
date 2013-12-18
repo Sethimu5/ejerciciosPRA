@@ -100,7 +100,7 @@ void conn::conecta(std::string server,std::string port){
                     Mundo.for_each_bot([&Mundo] (const bot & the_bot) {
                     	auto t = the_bot.get_team() + 1;
 
-                    	glColor3f(t * 0.2, t * 0.3, t * 0.7);
+                    	glColor3f(t * 0.2, 1 - t * 0.3, t * 0.1);
 
                     	const bot::position & pos = the_bot.get_position();
 
@@ -119,11 +119,11 @@ void conn::conecta(std::string server,std::string port){
             }
 	}
         if(Mundo.bot_count().size() != 1) {
-            std::cout << "it's a tie!" << std::endl;
+            std::cout << "Shit!" << std::endl;
         }
         else {
-            for(auto kv : Mundo.bot_count()) {
-                std::cout << kv.first << " wins!" << std::endl;
+            for(auto inmortal : Mundo.bot_count()) {
+                std::cout << inmortal.first << " se ha pulido a todos!" << std::endl;
             }
         }
     }
@@ -139,7 +139,6 @@ void conn::game_thread(std::shared_ptr<tcp::socket> socket, bool &gameover, bots
 
         superbots.ejecutar(5);
 
-
         for(auto b : bots.team_bots(id)) {
             std::stringstream stream;
             stream << "move " << b->get_x() << " " << b->get_y() << " " << b->get_next_direction();
@@ -152,7 +151,6 @@ void conn::game_thread(std::shared_ptr<tcp::socket> socket, bool &gameover, bots
         std::istream is(&buf);
         std::getline(is, data);
 
-
         std::istringstream stream(data);
 
         std::string command;
@@ -160,14 +158,11 @@ void conn::game_thread(std::shared_ptr<tcp::socket> socket, bool &gameover, bots
 
         if(command == "welcome") {
             stream >> id;
-            std::cout << "team id: " << id << std::endl;
             superbots.set_team(id);
 
             stream >> field_width;
             stream >> field_height;
             bots.set_size(field_width, field_height);
-            std::cout << "setting field: " << field_width << " x " << field_height << std::endl;
-            //std::cout << "setting " << win_width << ", " << win_height << std::endl;
             MYscreen.set_screen(win_width, win_height, field_width, field_height);
             connected = true;
         }
@@ -182,9 +177,6 @@ void conn::game_thread(std::shared_ptr<tcp::socket> socket, bool &gameover, bots
 
             boost::archive::text_iarchive ia(state);
             {
-                // mutex:
-                // segfaults if it draws during a state update (drawing +
-                // incomplete state is fatal)
                 boost::mutex::scoped_lock lock(state_mutex);
                 ia >> bots;
             }
